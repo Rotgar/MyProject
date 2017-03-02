@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// Siema 
+//
 int random1(int min, int max)
 {
   int tmp;
