@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int random1(int min, int max)
+int random(int min, int max)
 {
   int tmp;
   if (max >= min)
@@ -25,7 +25,7 @@ int f()
   int mean = 0;
   for (i = 0; i <= N; ++i)
   {
-    int val = random1(0, 100);
+    int val = random(0, 100);
 #if _DEBUG
     printf("%02d: %d\n", i, val);
 #endif
@@ -41,6 +41,7 @@ int f()
 
 int main(int argc, char * argv[])
 {
+  srand(time(NULL));
   int val = f();
   printf("Mean: %d\n", val);
   return 0;
