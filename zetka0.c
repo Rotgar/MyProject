@@ -31,7 +31,6 @@ int f()
 #endif
     x[i] = val;
   }
-  printf("%d", x[0]);
   for (i = 0; i <= N; ++i)
   {
     mean += x[i];
