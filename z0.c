@@ -23,7 +23,7 @@ int f()
   int* x = (int *)malloc(N * sizeof(int));
   int i;
   int mean = 0;
-  for (i = 0; i <= N; ++i)
+  for (i = 0; i < N; ++i)
   {
     int val = random1(0, 100);
 #if _DEBUG
@@ -31,7 +31,7 @@ int f()
 #endif
     x[i] = val;
   }
-  for (i = 0; i <= N; ++i)
+  for (i = 0; i < N; ++i)
   {
     mean += x[i];
   }
